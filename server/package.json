@@ -1,0 +1,27 @@
+{
+  "name": "@app/server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc && swc --delete-dir-on-start --out-dir dist src",
+    "dev": "NODE_ENV=development concurrently \"swc --out-dir dist -w src\" \"nodemon dist/main\"",
+    "lint": "eslint --fix src",
+    "start": "node ./dist/main.js"
+  },
+  "dependencies": {
+    "@nestjs/common": "^9.4.2",
+    "@nestjs/config": "^2.3.2",
+    "@nestjs/core": "^9.4.2",
+    "@nestjs/platform-express": "^9.4.2",
+    "@nestjs/swagger": "^6.3.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.62",
+    "@swc/core": "^1.3.62",
+    "concurrently": "^8.0.1",
+    "nodemon": "^2.0.22"
+  }
+}
