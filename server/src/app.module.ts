@@ -3,8 +3,6 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { APP_PIPE } from '@nestjs/core';
 import { MongooseModule } from '@nestjs/mongoose';
 
-import { AppController } from './app.controller.js';
-import { AppService } from './app.service.js';
 import { AuthModule } from './auth/auth.module.js';
 import { UsersModule } from './users/users.module.js';
 
@@ -27,9 +25,7 @@ import { UsersModule } from './users/users.module.js';
     }),
     UsersModule
   ],
-  controllers: [AppController],
   providers: [
-    AppService,
     {
       provide: APP_PIPE,
       useClass: ValidationPipe
