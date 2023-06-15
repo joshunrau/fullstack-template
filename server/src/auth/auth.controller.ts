@@ -1,6 +1,6 @@
 import { Body, Controller, HttpCode, HttpStatus, Post } from '@nestjs/common';
 
-import { RouteAccess } from '../decorators/route-access.decorator.js';
+import { RouteAccess } from '../core/decorators/route-access.decorator.js';
 
 import { AuthService } from './auth.service.js';
 import { LoginRequestDto } from './dto/login-request.dto.js';
