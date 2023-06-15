@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 import { Greeting } from '@app/types';
 
@@ -13,7 +13,6 @@ export const App = () => {
     if (name) {
       url.searchParams.set('name', name);
     }
-    console.log(url);
     const response = await fetch(url);
     const data: Greeting = await response.json();
     alert(data.message);
