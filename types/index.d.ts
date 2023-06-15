@@ -4,7 +4,7 @@ export interface Greeting {
 
 /** AUTH */
 
-export type UserRole = 'admin';
+export type UserRole = 'admin' | 'standard';
 
 export type JwtPayload = {
   email: string;
