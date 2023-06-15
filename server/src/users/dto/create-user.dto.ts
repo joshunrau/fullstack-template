@@ -1,4 +1,5 @@
-import { IsEmail, IsNotEmpty } from 'class-validator';
+import { type UserRole } from '@app/types';
+import { IsEmail, IsIn, IsNotEmpty } from 'class-validator';
 
 export class CreateUserDto {
   @IsEmail()
@@ -6,4 +7,7 @@ export class CreateUserDto {
 
   @IsNotEmpty()
   password: string;
+
+  @IsIn(['admin'] satisfies UserRole[])
+  role: UserRole;
 }

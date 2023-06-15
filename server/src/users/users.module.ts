@@ -15,6 +15,7 @@ import { UsersService } from './users.service.js';
     ])
   ],
   controllers: [UsersController],
-  providers: [UsersService]
+  providers: [UsersService],
+  exports: [UsersService]
 })
 export class UsersModule {}
