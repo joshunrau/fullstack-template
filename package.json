@@ -5,6 +5,7 @@
   "scripts": {
     "build": "env-cmd turbo run build",
     "dev": "env-cmd turbo run dev",
+    "test": "env-cmd turbo run test",
     "ws": "env-cmd bash -c 'yarn workspace @app/$0 ${@:1}'"
   },
   "devDependencies": {
