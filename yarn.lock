@@ -246,10 +246,10 @@
     got "^11.8.5"
     os-filter-obj "^2.0.0"
 
-"@nestjs/common@^10.0.0":
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-10.0.0.tgz#368959074975326b893893b7c4378d52bf9c2671"
-  integrity sha512-Fa2GDQJrO5TTTcpISWfm0pdPS62V+8YbxeG5CA01zMUI+dCO3v3oFf+BSjqCGUUo7GDNzDsjAejwGXuqA54RPw==
+"@nestjs/common@^10.0.3":
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/@nestjs/common/-/common-10.0.3.tgz#998b80884b9c9ffd54f7e51105612cf5e47a63dc"
+  integrity sha512-Zv59rDQMuwyja8fvnQelG4AbEe7FEC2ZUXcUwE6Tw0aOHx5CaOBIU426FCYY9o3iqJX3xLCKVJ8NrLPg58xCZg==
   dependencies:
     uid "2.0.2"
     iterare "1.2.1"
