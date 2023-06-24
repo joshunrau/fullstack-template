@@ -11,7 +11,7 @@
     "test": "find ./src -name '*.spec.ts' -exec node --loader @swc-node/register/esm --test {} \\;"
   },
   "dependencies": {
-    "@nestjs/common": "^10.0.0",
+    "@nestjs/common": "^10.0.3",
     "@nestjs/config": "^3.0.0",
     "@nestjs/core": "^10.0.0",
     "@nestjs/jwt": "^10.1.0",
